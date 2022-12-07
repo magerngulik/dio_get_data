@@ -1,0 +1,14 @@
+const String tSignUpTitle = "MyApp";
+const String tSignUpSubTitle = "Aplikasi Ini Dibuat Untuk Memenuhi Tugas UAS Saya";
+const String tSignInWithGoogle = "SignIn With Google";
+const String tAlreadyHaveAnAccount = "Already Have An Account?";
+const String tLogin = "Log In";
+const String tFullName = "Full Name";
+const String tEmail = "Email";
+const String tID = "ID";
+const String tPassword = "Password";
+const String tSignup = "Sign Up";
+const String tDontHaveAnAccount = "Don't Have An Account? ";
+const String tForgetPassword = "Forget Password";
+const String tLoginTitle = "Selamat Datang!";
+const String tLoginSubTitle = "Silahkan Login Dengan Akun Yang Telah Terdaftar";
