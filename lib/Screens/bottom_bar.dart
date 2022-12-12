@@ -1,6 +1,7 @@
 import 'package:uas/Screens/home_screens.dart';
 import 'package:flutter/material.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:uas/Screens/rating_screens.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -14,7 +15,7 @@ class _BottomBarState extends State<BottomBar> {
   //Menampilkan widget
   static final List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    const Text('Bookmark'),
+    RatingScreens(),
     const Text('Search'),
     const Text('Profile'),
     const Text('Pengaturan')
@@ -35,20 +36,27 @@ class _BottomBarState extends State<BottomBar> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         elevation: 10, //mengatur ketinggian
-        showSelectedLabels: false, //menampilkan label teks bernilai true (dibawah icon ada teks), jika false maka tidak ditampilkan
-        type: BottomNavigationBarType.fixed,//pergerakan icon ketika tombol dipencet, jika fixed menetap, shifting bergeser
-        showUnselectedLabels: false,//ketika icon dipencet, jika true icon yang ditekan tidak ada ket. label tp icon yg lain ada, dan jk false semua tidak ada ket.label
+        showSelectedLabels:
+            false, //menampilkan label teks bernilai true (dibawah icon ada teks), jika false maka tidak ditampilkan
+        type: BottomNavigationBarType
+            .fixed, //pergerakan icon ketika tombol dipencet, jika fixed menetap, shifting bergeser
+        showUnselectedLabels:
+            false, //ketika icon dipencet, jika true icon yang ditekan tidak ada ket. label tp icon yg lain ada, dan jk false semua tidak ada ket.label
         selectedItemColor: const Color(0xFF526799),
         unselectedItemColor: const Color(0xFF526799),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(FluentSystemIcons.ic_fluent_home_regular),//ikon ketika sebelum ditekan
-            activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),//ikon ketika setelah ditekan
+            icon: Icon(FluentSystemIcons
+                .ic_fluent_home_regular), //ikon ketika sebelum ditekan
+            activeIcon: Icon(FluentSystemIcons
+                .ic_fluent_home_filled), //ikon ketika setelah ditekan
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(FluentSystemIcons.ic_fluent_bookmark_regular),//ikon ketika sebelum ditekan
-            activeIcon: Icon(FluentSystemIcons.ic_fluent_bookmark_filled),//ikon ketika setelah ditekan
+            icon: Icon(FluentSystemIcons
+                .ic_fluent_bookmark_regular), //ikon ketika sebelum ditekan
+            activeIcon: Icon(FluentSystemIcons
+                .ic_fluent_bookmark_filled), //ikon ketika setelah ditekan
             label: "Bookmark",
           ),
           BottomNavigationBarItem(
