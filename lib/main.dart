@@ -8,7 +8,6 @@ import 'package:uas/Screens/home_screens.dart';
 import 'package:uas/Screens/rating_screens.dart';
 import 'package:uas/Screens/search_screen.dart';
 import 'package:uas/Screens/splash_screens.dart';
-import 'package:uas/Screens/testing_screens.dart';
 
 var routes = <String, WidgetBuilder>{
   "/HomeScreen": (BuildContext context) => HomeScreen(),
